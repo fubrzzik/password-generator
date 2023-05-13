@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password generator</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">
+                Password Generator
+            </h1>
+
+            <div class="generator">
+                <div class="generator_output">
+                    <span class="password">P4s$W0rd_G3nEr4t0R</span>
+                    <div id="copy_password" title="Copy to clipboard">
+                        <img src="./images/copy.svg" alt="">
+                    </div>
+                    <span class="tooltip">Copied</span>
+                </div>
+
+                <div class="generator_config">
+                    <div class="generator_config_length">
+                        <label for="length">Character length</label>
+                        <span class="length-value">15</span>
+                        <input type="range" id="length" name="length" autocomplete="off" min="0" max="30" value="15">
+                    </div>
+
+                    <div class="generator_config_includes">
+                        <div class="generator_config_includes_item">
+                            <input type="checkbox" id="includeUppercase" name="includeUppercase" autocomplete="off" checked>
+                            <span class="checkmark"></span>
+                            <label for="includeUppercase">Include uppercase letters</label>
+                        </div>
+                        <div class="generator_config_includes_item">
+                            <input type="checkbox" id="includeLowercase" name="includeLowercase" autocomplete="off" checked>
+                            <span class="checkmark"></span>
+                            <label for="includeLowercase">Include lowercase letters</label>
+                        </div>
+                        <div class="generator_config_includes_item">
+                            <input type="checkbox" id="includeNumbers" name="includeNumbers" autocomplete="off">
+                            <span class="checkmark"></span>
+                            <label for="includeNumbers">Include numbers</label>
+                        </div>
+                        <div class="generator_config_includes_item">
+                            <input type="checkbox" id="includeSymbols" name="includeSymbols" autocomplete="off">
+                            <span class="checkmark"></span>
+                            <label for="includeSymbols">Include symbols</label>
+                        </div>
+                    </div>
+
+                    <button id="generate">Generate</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
